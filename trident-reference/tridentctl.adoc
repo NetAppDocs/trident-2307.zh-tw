@@ -1,0 +1,265 @@
+---
+sidebar: sidebar 
+permalink: trident-reference/tridentctl.html 
+keywords: tridentctl, trident, kubernetes, commands, options, usage, flags 
+summary: 深入瞭解tridentctl、這是一個命令列公用程式、可讓您輕鬆存取Trident。 
+---
+= tridentctl命令和選項
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+。 https://github.com/NetApp/trident/releases["Trident安裝程式套裝組合"^] 包括命令列公用程式、 `tridentctl`可讓您輕鬆存取Astra Trident。擁有足夠權限的Kubernetes使用者可以使用它來安裝Astra Trident、以及直接與它互動、以管理包含Astra Trident Pod的命名空間。
+
+
+
+== 可用的命令和選項
+
+如需使用資訊、請執行 `tridentctl --help`。
+
+可用的命令和全域選項包括：
+
+[listing]
+----
+Usage:
+  tridentctl [command]
+----
+可用命令：
+
+* `create`：將資源新增至Astra Trident。
+* `delete`：從Astra Trident移除一或多個資源。
+* `get`：從Astra Trident取得一或多項資源。
+* `help`：有關任何命令的幫助。
+* `images`：列印容器影像Astra Trident需求的表格。
+* `import`：將現有資源導入Astra Trident。
+* `install`：安裝Astra Trident。
+* `logs`：從Astra Trident列印記錄。
+* `send`：從Astra Trident傳送資源。
+* `uninstall`：卸載Astra Trident。
+* `update`：修改Astra Trident中的資源。
+* `upgrade`：升級Astra Trident中的資源。
+* `version`：列印Astra Trident的版本。
+
+
+旗標：
+
+* ``-d, --debug`：除錯輸出。
+* ``-h, --help`：幫助 `tridentctl`。
+* ``-n, --namespace string`：Astra Trident部署的命名空間。
+* ``-o, --output string`：輸出格式。json之一| yaml| name| wl| ps（預設）。
+* ``-s, --server string`：Astra Trident REST介面的位址/連接埠。
++
+
+CAUTION: Trident REST介面可設定為偵聽、僅適用於127.0.0.1（適用於IPV4）或[:1]（適用於IPv6）。
+
+
+
+
+CAUTION: Trident REST介面可設定為偵聽、僅適用於127.0.0.1（適用於IPV4）或[:1]（適用於IPv6）。
+
+
+
+== `create`
+
+您可以使用執行 `create` 命令以新增資源至Astra Trident。
+
+[listing]
+----
+Usage:
+  tridentctl create [option]
+----
+可用選項：
+`backend`：將後端新增至Astra Trident。
+
+
+
+== `delete`
+
+您可以執行 `delete` 從Astra Trident移除一或多個資源的命令。
+
+[listing]
+----
+Usage:
+  tridentctl delete [option]
+----
+可用選項：
+
+* `backend`：從Astra Trident刪除一個或多個儲存後端。
+* `snapshot`：從Astra Trident刪除一個或多個Volume快照。
+* `storageclass`：從Astra Trident刪除一個或多個儲存類別。
+* `volume`：從Astra Trident刪除一個或多個儲存磁碟區。
+
+
+
+
+== `get`
+
+您可以執行 `get` 從Astra Trident取得一或多個資源的命令。
+
+[listing]
+----
+Usage:
+  tridentctl get [option]
+----
+可用選項：
+
+* `backend`：從Astra Trident取得一或多個儲存後端。
+* `snapshot`：從Astra Trident取得一或多個快照。
+* `storageclass`：從Astra Trident取得一或多個儲存課程。
+* `volume`：從Astra Trident取得一或多個磁碟區。
+
+
+`volume` 旗標：
+* ``-h, --help`：Volume的說明。
+* `--parentOfSubordinate string`：將查詢限制在從屬來源Volume。
+* `--subordinateOf string`：將查詢限制在Volume的下屬。
+
+
+
+== `images`
+
+您可以執行 `images` 標記以列印容器影像Astra Trident需求的表格。
+
+[listing]
+----
+Usage:
+  tridentctl images [flags]
+----
+旗標：
+* ``-h, --help`: Help for images.
+* ``-v、--k8s-version stru`：語義版本的Kubernetes叢集。
+
+
+
+== `import volume`
+
+您可以執行 `import volume` 將現有磁碟區匯入Astra Trident的命令。
+
+[listing]
+----
+Usage:
+  tridentctl import volume <backendName> <volumeName> [flags]
+----
+別名：
+`volume, v`
+
+旗標：
+
+* ``-f, --filename string`：Yaml或Json PVc檔案的路徑。
+* ``-h, --help`：Volume的說明。
+* ``--no-manage`：僅建立PV/PVc。不要假設磁碟區生命週期管理。
+
+
+
+
+== `install`
+
+您可以執行 `install` 安裝Astra Trident的旗標。
+
+[listing]
+----
+Usage:
+  tridentctl install [flags]
+----
+旗標：
+
+* `--autosupport-image string`： AutoSupport 遙測的容器映像（預設為「 NetApp/trident autosupport ： <current-version> 」）。
+* `--autosupport-proxy string`：代理伺服器的位址/連接埠、用於傳送AutoSupport 「遙測」功能。
+* `--enable-node-prep`：嘗試在節點上安裝所需的套件。
+* `--generate-custom-yaml`：在不安裝任何內容的情況下生成Yaml文件。
+* `-h, --help`：安裝說明。
+* `--http-request-timeout`：覆寫 Trident 控制器 REST API 的 HTTP 要求逾時（預設值為 1m30s ）。
+* `--image-registry string`：內部映像登錄的位址/連接埠。
+* `--k8s-timeout duration`：所有Kubernetes作業的逾時時間（預設為3個月）。
+* `--kubelet-dir string`：Kuvelet內部狀態的主機位置（預設為「/var/lib/kubelet」）。
+* `--log-format string`：Astra Trident記錄格式（text、json）（預設「text」）。
+* `--pv string`：Astra Trident使用的舊PV名稱、確保不存在（預設為「Trident」）。
+* `--pvc string`：Astra Trident使用的舊版永久虛擬室早名稱、確保不存在（預設為「Trident」）。
+* `--silence-autosupport`：請勿AutoSupport 自動將不實的套裝組合傳送至NetApp（預設為true）。
+* `--silent`：安裝期間禁用大多數輸出。
+* `--trident-image string`：要安裝的Astra Trident映像。
+* `--use-custom-yaml`：使用安裝目錄中現有的任何Yaml檔案。
+* `--use-ipv6`：使用IPv6進行Astra Trident的通訊。
+
+
+
+
+== `logs`
+
+您可以執行 `logs` 用於列印Astra Trident記錄的旗標。
+
+[listing]
+----
+Usage:
+  tridentctl logs [flags]
+----
+旗標：
+
+* ``-a, --archive`：除非另有說明、否則請使用所有記錄建立支援歸檔。
+* ``-h, --help`：日誌幫助。
+* ``-l, --log string`：要顯示的Astra Trident記錄。其中一個trident | auto| trident運算子| all（預設為「自動」）。
+* ``--node string`：Kubernetes節點名稱、用於收集節點Pod記錄。
+* ``-p, --previous`：獲取先前容器實例的日誌（如果存在）。
+* ``--sidecars`：取得邊側邊容器的記錄。
+
+
+
+
+== `send`
+
+您可以執行 `send` 從Astra Trident傳送資源的命令。
+
+[listing]
+----
+Usage:
+  tridentctl send [option]
+----
+可用選項：
+`autosupport`：將AutoSupport 一份不適用的歸檔文件傳送給NetApp。
+
+
+
+== `uninstall`
+
+您可以執行 `uninstall` 解除安裝Astra Trident的旗標。
+
+[listing]
+----
+Usage:
+  tridentctl uninstall [flags]
+----
+旗標：
+* `-h, --help`：解除安裝說明。
+* `--silent`：卸載期間禁用大多數輸出。
+
+
+
+== `update`
+
+您可以執行 `update` 用於修改Astra Trident中資源的命令。
+
+[listing]
+----
+Usage:
+  tridentctl update [option]
+----
+可用選項：
+`backend`：更新Astra Trident的後端。
+
+
+
+== `version`
+
+您可以執行 `version` 用於列印版本的旗標 `tridentctl` 以及執行中的Trident服務。
+
+[listing]
+----
+Usage:
+  tridentctl version [flags]
+----
+旗標：
+* `--client`：僅限用戶端版本（不需要伺服器）。
+* `-h, --help`：版本說明。
