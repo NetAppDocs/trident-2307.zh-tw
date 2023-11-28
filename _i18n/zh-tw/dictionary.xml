@@ -4040,4 +4040,5 @@ Astra Trident</block>
   <block id="ab09b43d2faaea1b49257d5a973eae0e" category="sidebar">管理和監控 Astra Trident</block>
   <block id="71f5771dab663d80ba4dad1627e3386a" category="sidebar">升級總覽</block>
   <block id="5ff3faebb0ff710340bdbee89a4667ad" category="sidebar">與營運者一起升級</block>
+  <block id="0cd8d0588cd2b20face3a0379d38f777" category="admonition">使用動態匯出原則時、請勿使用網路位址轉譯（ NAT ）。使用 NAT 時、儲存控制器會看到前端 NAT 位址、而非實際 IP 主機位址、因此在匯出規則中找不到相符項目時、就會拒絕存取。</block>
 </blocks>
