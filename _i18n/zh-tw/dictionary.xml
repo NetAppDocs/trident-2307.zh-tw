@@ -465,7 +465,6 @@
   <block id="65840df7365892d2abe1280cb6cdb1d2" category="paragraph">以下列出部分最佳實務做法文件。搜尋<block ref="4caccef7312f2c398bfbb419629c1a78" category="inline-link-rx"></block> 適用於最新版本。</block>
   <block id="d911b17f4f4cdcca62a04ad77aa9403d" category="paragraph">*《*》ONTAP</block>
   <block id="f9dd52d280693dc59e53b6e1fb7bd801" category="inline-link">NFS最佳實務與實作指南</block>
-  <block id="40bb23d54df7f59219c18f15a346d9e5" category="list-text"><block ref="40bb23d54df7f59219c18f15a346d9e5" category="inline-link-rx"></block></block>
   <block id="a76193f5d9397d9c49ca283a20ccf649" category="inline-link">SAN管理指南</block>
   <block id="5bc9b097037d45aff954bf9bd632d4a4" category="list-text"><block ref="c745f55eb0c9991966e63f0608541bb1" category="inline-link-rx"></block> （適用於iSCSI）</block>
   <block id="5ca34d6ffc2a555b689542e3fbeeb7af" category="inline-link">適用於RHEL的iSCSI Express組態</block>
@@ -480,15 +479,11 @@
   <block id="9d0da73b02655dd7861121905db229e2" category="list-text"><block ref="9d0da73b02655dd7861121905db229e2" category="inline-link-rx"></block></block>
   <block id="9aaca8cfd79770bc4944ccc477e37141" category="paragraph">*應用程式最佳實務做法資訊*</block>
   <block id="27a5e02bc2fadee43ace94805739a0c8" category="inline-link">MySQL ONTAP 的最佳實務做法</block>
-  <block id="40d2eaf9adabe99a601c57eabf49e4d3" category="list-text"><block ref="40d2eaf9adabe99a601c57eabf49e4d3" category="inline-link-rx"></block></block>
   <block id="17efdd7d210511985714be299d595292" category="inline-link">MySQL SolidFire 的最佳實務做法</block>
   <block id="d03b53d8ec563c37e16ee8c900a75b96" category="list-text"><block ref="d03b53d8ec563c37e16ee8c900a75b96" category="inline-link-rx"></block></block>
   <block id="3aefe1a041af945f1fe8673bf775057b" category="inline-link">NetApp SolidFire 的功能與Cassandra</block>
-  <block id="7e2b19f6f6bd1332efe1f7a698984670" category="list-text"><block ref="7e2b19f6f6bd1332efe1f7a698984670" category="inline-link-rx"></block></block>
   <block id="6e580111d3a8c12cdcd9522a4d3484c6" category="inline-link">Oracle SolidFire 的最佳實務做法</block>
-  <block id="6db96715cefe9c4950ef722865494128" category="list-text"><block ref="6db96715cefe9c4950ef722865494128" category="inline-link-rx"></block></block>
   <block id="6448cf37496207be126495e5b05851de" category="inline-link">PostgreSQL SolidFire 的最佳實務做法</block>
-  <block id="eb2c92a9d2d39fa7191d6e84d5c33bb5" category="list-text"><block ref="eb2c92a9d2d39fa7191d6e84d5c33bb5" category="inline-link-rx"></block></block>
   <block id="b062996d6ca590abe798d3db75561f79" category="paragraph">並非所有應用程式都有特定的準則、請務必與您的NetApp團隊合作並使用<block ref="4caccef7312f2c398bfbb419629c1a78" category="inline-link-rx"></block> 以尋找最新的文件。</block>
   <block id="748c130a6179b02d614cf9a027294302" category="doc">整合Astra Trident</block>
   <block id="79126799d841fcc6275e2d0dd60f9d39" category="paragraph">若要整合Astra Trident、下列設計與架構元素需要整合：驅動程式選擇與部署、儲存類別設計、虛擬集區設計、持續磁碟區宣告（PVc）、使用Astra Trident對儲存資源配置、磁碟區作業及OpenShift服務部署的影響。</block>
@@ -1701,7 +1696,6 @@ ONTAP 後端的 Amazon FSX 需要此參數。</block>
   <block id="a84a64b02579dc14f89cbfdf30b6e938" category="list-text">您可以使用指定記錄保留時間範圍<block ref="86339c2ed773d5bd944b82d3086d3477" prefix=" " category="inline-code"></block> 旗標。例如：<block ref="e238339d491d4840f7d8e509bdbb7b63" prefix=" " category="inline-code"></block>。此資訊會透過收集和傳送<block ref="9d80ca17f097c8e365550f4036ccf0e3" prefix=" " category="inline-code"></block> 容器
 這是與 Astra Trident 一起安裝的。您可以從取得Container映像<block ref="1b00454f0ab35dcec2ee1a0061efc6e5" category="inline-link-rx"></block>。</block>
   <block id="53084cad3d11df800502598c11e2d10b" category="inline-link">EULA</block>
-  <block id="b9a52e8d1e9b14b8825c6ea01c0ce6d6" category="list-text">Trident AutoSupport 無法收集或傳輸個人識別資訊（PII）或個人資訊。隨附a<block ref="173a360b412944768c2ab13e6c8fd1c7" category="inline-link-rx"></block> 這不適用於Trident Container映像本身。您可以深入瞭解NetApp對資料安全性與信任的承諾<block ref="8470ff535916bda3f4ea4723647a7135" category="inline-link-rx"></block>。</block>
   <block id="89f0f2832f60f480805faf638848c5b7" category="paragraph">Astra Trident傳送的有效負載範例如下：</block>
   <block id="d2ec86f126f845e79aff07e70bf89472" category="list-text">此資訊將傳送至NetApp的「不只是」端點。AutoSupport AutoSupport如果您使用私有登錄來儲存容器映像、可以使用<block ref="53b228c1c8295f49b0c35325e14fcd6a" prefix=" " category="inline-code"></block> 旗標。</block>
   <block id="86c5a11fba83815412aec79f67f2d276" category="list-text">您也可以產生安裝Yaml檔案來設定Proxy URL。您可以使用來完成這項作業<block ref="758aee5ba3aed3d4e9a31a16ea04b47a" prefix=" " category="inline-code"></block> 以建立Yaml檔案並新增<block ref="46f08f4431bbd907a039e14ddf39cf5f" prefix=" " category="inline-code"></block> 的引數<block ref="9d80ca17f097c8e365550f4036ccf0e3" prefix=" " category="inline-code"></block> 中的Container<block ref="eb6cdeddd28243c1552ea3b1061b4410" prefix=" " category="inline-code"></block>。</block>
@@ -1848,7 +1842,6 @@ ONTAP 後端的 Amazon FSX 需要此參數。</block>
   <block id="f1cfea5f1444de607dfa549b3aa57010" category="inline-link-macro">在命名空間之間共用磁碟區：歡迎使用跨命名空間磁碟區存取</block>
   <block id="2780f690b7670efc296ac19ef3029d0c" category="list-text">請造訪 <block ref="b0d29f1b2abb2cc552e4cc47177582ef" category="inline-link-macro-rx"></block>。</block>
   <block id="96e1384807331548bf745acde0fe1b73" category="inline-link-macro">NetAppTV</block>
-  <block id="414883f8b6ef58c7b3b37e66fbfd482f" category="list-text">觀看示範 <block ref="1945a2d4809e81668f29485f6ae1bbc8" category="inline-link-macro-rx"></block>。</block>
   <block id="72a5926b7fb086fe87e93771f6620556" category="summary">瞭解如何使用執行後端管理作業<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block>。</block>
   <block id="748a22b5f1312291ad55429ba4b809a0" category="doc">使用tridentctl執行後端管理</block>
   <block id="aeeb03235358f0f4bf3be628bed08721" category="section-title">建立後端</block>
@@ -3990,12 +3983,6 @@ Astra Trident</block>
   <block id="606b9e83fb467a43b3065d4fd5037094" category="list-text"><block ref="606b9e83fb467a43b3065d4fd5037094" category="inline-link-rx"></block></block>
   <block id="a93e9e44b7a375a4236260f5ff2b251e" category="inline-link">Astra Trident 21.07</block>
   <block id="3830d427e146a8a64454dc373d9b1502" category="list-text"><block ref="3830d427e146a8a64454dc373d9b1502" category="inline-link-rx"></block></block>
-  <block id="0c141ec81d4107f4c63fb0deb2531c0d" category="inline-link">Astra Trident 21.04.</block>
-  <block id="193bfae1ebda99fb7289c66fa69395a0" category="list-text"><block ref="193bfae1ebda99fb7289c66fa69395a0" category="inline-link-rx"></block></block>
-  <block id="cba2c660d905f83e39a0d1771286c9e7" category="inline-link">Astra Trident 21.01</block>
-  <block id="97f32ab1a5165dc49105dca53b9f4de7" category="list-text"><block ref="97f32ab1a5165dc49105dca53b9f4de7" category="inline-link-rx"></block></block>
-  <block id="727d2d1e15a5c7260e90c50b1c250a4c" category="inline-link">Astra Trident 20.10</block>
-  <block id="568faefb90021c668cb5de911e54d468" category="list-text"><block ref="568faefb90021c668cb5de911e54d468" category="inline-link-rx"></block></block>
   <block id="ea3d51fb2b16acb7cb260f25bc8965b1" category="sidebar">Astra Trident是由NetApp維護的開放原始碼儲存資源配置程式和Orchestrator。它可讓您為Docker和Kubernetes所管理的容器化應用程式建立儲存磁碟區。</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">版本資訊</block>
   <block id="312b0dc38b01ff32c1b2f5f81ee1ab2d" category="sidebar">與Trident營運者一起部署</block>
@@ -4041,4 +4028,11 @@ Astra Trident</block>
   <block id="71f5771dab663d80ba4dad1627e3386a" category="sidebar">升級總覽</block>
   <block id="5ff3faebb0ff710340bdbee89a4667ad" category="sidebar">與營運者一起升級</block>
   <block id="0cd8d0588cd2b20face3a0379d38f777" category="admonition">使用動態匯出原則時、請勿使用網路位址轉譯（ NAT ）。使用 NAT 時、儲存控制器會看到前端 NAT 位址、而非實際 IP 主機位址、因此在匯出規則中找不到相符項目時、就會拒絕存取。</block>
+  <block id="190dbae19c88b1e68bf03f7783c5d5d1" category="list-text"><block ref="190dbae19c88b1e68bf03f7783c5d5d1" category="inline-link-rx"></block></block>
+  <block id="430c6bcb8516befc45fb8173b0ca4e1f" category="list-text"><block ref="430c6bcb8516befc45fb8173b0ca4e1f" category="inline-link-rx"></block></block>
+  <block id="d7d36869f2f4aa1eb99a10008e153f20" category="list-text"><block ref="d7d36869f2f4aa1eb99a10008e153f20" category="inline-link-rx"></block></block>
+  <block id="f8b52d963f246a75dc6c8b78c954a4fd" category="list-text"><block ref="f8b52d963f246a75dc6c8b78c954a4fd" category="inline-link-rx"></block></block>
+  <block id="b6780b7b2561935ff862fe7126cde751" category="list-text"><block ref="b6780b7b2561935ff862fe7126cde751" category="inline-link-rx"></block></block>
+  <block id="b9a641d903e611a87a5e68ac7fdb0b84" category="list-text">Trident AutoSupport 無法收集或傳輸個人識別資訊（PII）或個人資訊。隨附<block ref="173a360b412944768c2ab13e6c8fd1c7" category="inline-link-rx"></block> 不適用於 Trident 容器映像本身的。您可以深入瞭解 NetApp 對資料安全與信任的承諾<block ref="d3cc55401bc8303e01c6b0c43ba0733f" category="inline-link-rx"></block>。</block>
+  <block id="5ff83dbc70e496ea22b38ea61bb69f05" category="list-text">觀看上的示範 <block ref="c27441bbbe62adf51ae6ecec41fde8bd" category="inline-link-macro-rx"></block>。</block>
 </blocks>
