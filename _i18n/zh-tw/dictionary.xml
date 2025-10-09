@@ -3580,9 +3580,6 @@ Astra Trident ；操作人員將自動嘗試從此狀態恢復。如果此狀態
   <block id="f72ba1a3a498489a96fd8774bfa9ea9d" category="example-title">支援升級功能的不一樣之處&lt;/strong&gt; &lt;strong&gt;</block>
   <block id="f456a413d0506028374e871768a5f176" category="paragraph">當叢集的Kubernetes版本升級至支援的版本時、營運者會自動更新現有的Astra Trident安裝、並加以變更、以確保其符合Kubernetes版本的要求。</block>
   <block id="d1aae6ea63eb5e7fe6a9fcea5f671406" category="admonition">如果叢集升級至不受支援的版本、則操作員將無法安裝Astra Trident。如果操作員已安裝Astra Trident、則會顯示警告、指出Astra Trident安裝在不受支援的Kubernetes版本上。</block>
-  <block id="c3b2fe84f143129d7a18ad12df229bc6" category="example-title">使用BlueXP（前身為Cloud Manager）進行叢集管理&lt;/strong&gt; &lt;strong&gt;</block>
-  <block id="fd1117c82327fbe8671f26e897ceb8f4" category="inline-link-macro">使用BlueXP的Astra Trident</block>
-  <block id="a76a1e164520105317267dc41b95e8ce" category="paragraph">與 <block ref="f8c16e8c21124ccc028d2db7fd32a98f" category="inline-link-macro-rx"></block>、您可以升級至最新版的Astra Trident、新增及管理儲存類別、並將其連線至工作環境、以及使用Cloud Backup Service NetApp備份持續的Volume。BlueXP支援使用Trident操作者手動或使用Helm進行Astra Trident部署。</block>
   <block id="43e6c0a141c1737a96917c56c7e22a73" category="inline-link-macro">安裝&lt;block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category='inline-code'/&gt; 功能</block>
   <block id="1a2de31d648d8c09e5c2a9257a5ad67b" category="paragraph">如果您現有的部署必須升級、或是想要高度自訂部署、您應該考慮 <block ref="e214bf159dbaf6573cfe15f1373b92db" category="inline-link-macro-rx"></block>。這是部署Astra Trident的傳統方法。</block>
   <block id="4c24a3b9facf2ea9fc7ed2ca52dab45d" category="inline-link-macro">客製化安裝功能&lt;block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category='inline-code'/&gt;</block>
@@ -3940,16 +3937,6 @@ Astra Trident</block>
   <block id="865d5fc74524e198b7d4edc0b0f93cd6" category="paragraph"><block ref="865d5fc74524e198b7d4edc0b0f93cd6" category="inline-link-macro-rx"></block></block>
   <block id="955ddf0f7e289ee80cdea4b5324b620d" category="inline-link-macro">22.01</block>
   <block id="1d6d13ec4b4db5f5d3487f7624ba2730" category="paragraph"><block ref="1d6d13ec4b4db5f5d3487f7624ba2730" category="inline-link-macro-rx"></block></block>
-  <block id="ecdd0ca053bad0e4dd13561a556a27a2" category="inline-link-macro">21.10.</block>
-  <block id="26868cf4e34a30cd32082fe3a81f7a5b" category="paragraph"><block ref="26868cf4e34a30cd32082fe3a81f7a5b" category="inline-link-macro-rx"></block></block>
-  <block id="b327964aef72f8262abc54b607c5acf2" category="inline-link-macro">21.07</block>
-  <block id="989e34685c65cba24936de4972bf6714" category="paragraph"><block ref="989e34685c65cba24936de4972bf6714" category="inline-link-macro-rx"></block></block>
-  <block id="af08b45fa44807ac1852671e6fc59d44" category="inline-link-macro">21.04</block>
-  <block id="b5f347c5a644b0177640eb424de5985e" category="paragraph"><block ref="b5f347c5a644b0177640eb424de5985e" category="inline-link-macro-rx"></block></block>
-  <block id="d029b605d0129cdb050642645b32b1db" category="inline-link-macro">21.01</block>
-  <block id="1e3346636960647557d3c482eddcce3b" category="paragraph"><block ref="1e3346636960647557d3c482eddcce3b" category="inline-link-macro-rx"></block></block>
-  <block id="a84024ce06ef98519b3b51300b2c8fbf" category="inline-link-macro">20.10.</block>
-  <block id="f5cb139594df07b13c6c08d1e87ca5ab" category="paragraph"><block ref="f5cb139594df07b13c6c08d1e87ca5ab" category="inline-link-macro-rx"></block></block>
   <block id="55559f520040667d3f8931728b37ef07" category="admonition">21.07之前的版本、請重新導向至舊版文件網站。</block>
   <block id="40e41fb2db11266b8f751c0d5c67cba0" category="inline-link">NetApp知識庫（需要登入）</block>
   <block id="01005ecf4349194d1ec13d0ba516c9e5" category="paragraph">如需疑難排解文章的完整清單、請參閱<block ref="57f5c759ada931c6a2051314ca6ee99e" category="inline-link-rx"></block>。您也可以找到Astra相關疑難排解問題的相關資訊<block ref="695f48b1d8b7348c0e2828947d24161e" category="inline-link-rx"></block>。</block>
@@ -3979,10 +3966,6 @@ Astra Trident</block>
   <block id="fdd380631ba8063e7b8f842282a01e40" category="list-text"><block ref="fdd380631ba8063e7b8f842282a01e40" category="inline-link-rx"></block></block>
   <block id="4af8991c21dff2f779496b8350d1124b" category="inline-link">Astra Trident 22.01</block>
   <block id="7669b0b69333e81c7c208aea3d1a3c6f" category="list-text"><block ref="7669b0b69333e81c7c208aea3d1a3c6f" category="inline-link-rx"></block></block>
-  <block id="cce172403b73af5c2a4e93081affcc7f" category="inline-link">Astra Trident 21.10</block>
-  <block id="606b9e83fb467a43b3065d4fd5037094" category="list-text"><block ref="606b9e83fb467a43b3065d4fd5037094" category="inline-link-rx"></block></block>
-  <block id="a93e9e44b7a375a4236260f5ff2b251e" category="inline-link">Astra Trident 21.07</block>
-  <block id="3830d427e146a8a64454dc373d9b1502" category="list-text"><block ref="3830d427e146a8a64454dc373d9b1502" category="inline-link-rx"></block></block>
   <block id="ea3d51fb2b16acb7cb260f25bc8965b1" category="sidebar">Astra Trident是由NetApp維護的開放原始碼儲存資源配置程式和Orchestrator。它可讓您為Docker和Kubernetes所管理的容器化應用程式建立儲存磁碟區。</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">版本資訊</block>
   <block id="312b0dc38b01ff32c1b2f5f81ee1ab2d" category="sidebar">與Trident營運者一起部署</block>
@@ -4035,4 +4018,6 @@ Astra Trident</block>
   <block id="b6780b7b2561935ff862fe7126cde751" category="list-text"><block ref="b6780b7b2561935ff862fe7126cde751" category="inline-link-rx"></block></block>
   <block id="b9a641d903e611a87a5e68ac7fdb0b84" category="list-text">Trident AutoSupport 無法收集或傳輸個人識別資訊（PII）或個人資訊。隨附<block ref="173a360b412944768c2ab13e6c8fd1c7" category="inline-link-rx"></block> 不適用於 Trident 容器映像本身的。您可以深入瞭解 NetApp 對資料安全與信任的承諾<block ref="d3cc55401bc8303e01c6b0c43ba0733f" category="inline-link-rx"></block>。</block>
   <block id="5ff83dbc70e496ea22b38ea61bb69f05" category="list-text">觀看上的示範 <block ref="c27441bbbe62adf51ae6ecec41fde8bd" category="inline-link-macro-rx"></block>。</block>
+  <block id="15eaa3bd461b989a50d54376e8b82942" category="example-title">&lt;strong&gt;使用NetApp Console管理 Kubernetes 叢集&lt;/strong&gt;</block>
+  <block id="28cfb8f261719a05032a41acccc32995" category="paragraph">透過使用NetApp Console 的Astra Trident ，您可以升級至最新版本的Astra Trident，新增和管理儲存類別並將其連接到工作環境，以及使用Cloud Backup Service備份持久性磁碟區。控制台支援使用Trident操作員手動或使用 Helm 部署Astra Trident 。</block>
 </blocks>
