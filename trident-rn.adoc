@@ -321,7 +321,7 @@ IMPORTANT: Kubernetes 1.27 現在支援 Trident 。升級Kubernetes之前、請�
 
 == 22.04年的變化
 
-NetApp持續改善及強化其產品與服務。以下是Astra Trident的一些最新功能。如需舊版的資訊、請參閱 https://docs.netapp.com/us-en/trident/earlier-versions.html["較早版本的文件"]。
+NetApp 不斷改進和增強其產品和服務。以下是 Astra Trident 的一些最新功能。有關先前版本的資訊，請參閱早期版本的文件。
 
 
 IMPORTANT: 如果您要從任何先前的Trident版本升級並使用Azure NetApp Files 更新版本、請使用 ``location`` 組態參數現在是必填的單一欄位。

@@ -3245,8 +3245,6 @@ Volume：</block>
   <block id="d3889fc650fa47326b5f1d0c56f50970" category="inline-link-macro">Pod安全標準</block>
   <block id="4e8effbd512bb14dbe10454c0f045ff2" category="paragraph">全新 <block ref="305368b4f0d008a807e095ab9da58448" category="inline-link-macro-rx"></block> （PSS）部分已新增、詳述由Astra Trident在安裝時啟用的權限。</block>
   <block id="278dc4a29aa2b881b9dc4b45a82929c5" category="section-title">22.04年的變化</block>
-  <block id="ba09ee47d11962c1ccd13d7e1f10e6c5" category="inline-link">較早版本的文件</block>
-  <block id="368b120a3b5f53a49dc3ab96ec9b8dbd" category="paragraph">NetApp持續改善及強化其產品與服務。以下是Astra Trident的一些最新功能。如需舊版的資訊、請參閱<block ref="25da125dffad1d6323c21354bccf0203" category="inline-link-rx"></block>。</block>
   <block id="7072ec708b0ea7e3243747d8b79c0d20" category="admonition">如果您要從任何先前的Trident版本升級並使用Azure NetApp Files 更新版本、請使用 <block ref="d5189de027922f81005951e6efe0efd5" prefix="" category="inline-code"></block> 組態參數現在是必填的單一欄位。</block>
   <block id="cb60f101c87f3def78d0fef168389244" category="inline-link-macro">GitHub 問題 #681.</block>
   <block id="2901fba3b85d37ea6000d90e72366ba6" category="list-text">改善iSCSI啟動器名稱的剖析。（<block ref="3947f141b94c1867221790f45a6ee173" category="inline-link-macro-rx"></block>）</block>
@@ -3835,7 +3833,6 @@ Astra Trident</block>
   <block id="14d76a1fc05dcace5308e48b3d9bad49" category="admonition">我們建議您檢閱 <block ref="4185c20447fb5f0bb4f33698bfd20d27" category="inline-link-macro-rx"></block> 與操作員一起升級之前。</block>
   <block id="a18aa1b83c1605570c9c2911c5180a7b" category="inline-link-macro">升級&lt;block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category='inline-code'/&gt; 功能</block>
   <block id="3b2fa532fe7cebc94d245316f8af8ab4" category="list-text"><block ref="fd3f4a100d968c915adb11c8797ef5d2" category="inline-link-macro-rx"></block></block>
-  <block id="ed79382c003eb221606454bd2116c86f" category="summary">Astra Trident是由NetApp維護的開放原始碼儲存資源配置程式和Orchestrator。它可讓您為Docker和Kubernetes所管理的容器化應用程式建立儲存磁碟區。** 請閱讀版本說明、瞭解升級至 Astra Trident 23.07 的重要資訊。 **</block>
   <block id="19b14d01c950971a7d832e9a179ba005" category="doc">Astra Trident 23.07 文件</block>
   <block id="a330e835c41b0ff1dfc7e483e7e7f70e" category="summary">虛擬資源池在Astra Trident的儲存後端與Kubernetes的StorageClass之間提供抽象層。管理員可透過通用的後端不受後端限制的方式、定義各個層級的位置、效能及保護、而無需使用StorageClass來指定要用於符合所需條件的實體後端、後端集區或後端類型。</block>
   <block id="9f77ac8822dd45ff19910e0170669eb7" category="paragraph">虛擬資源池可在Astra Trident儲存後端與Kubernetes之間提供抽象層<block ref="f652904c3bfb48fb25a0a75f485f0ff6" prefix=" " category="inline-code"></block>。管理員可以透過通用的後端不受限制的方式、定義各個方面、例如位置、效能及每個後端的保護、而無需進行任何操作<block ref="e1e2a331ab1d8dccfea06fc8e04e2f5d" prefix=" " category="inline-code"></block> 指定要用於符合所需條件的實體後端、後端集區或後端類型。</block>
@@ -3904,33 +3901,14 @@ Astra Trident</block>
   <block id="a880ae57450a3d9e2d8dd4c89d54126f" category="list-text">Astra Trident 文件自發行日起 25 至 36 個月內可供使用。</block>
   <block id="34b6cd75171affba6957e308dcbd92be" category="cell">版本</block>
   <block id="217af7d1776d22530d98be04d104fd49" category="inline-link-macro">23.07</block>
-  <block id="45c5d0a80197b87cde19915df9356724" category="paragraph"><block ref="45c5d0a80197b87cde19915df9356724" category="inline-link-macro-rx"></block></block>
-  <block id="f66bc2df80ac37f354b591907be92e18" category="cell">2024 年 7 月</block>
-  <block id="928f12ce7e1197fe962e09f979b98d0d" category="cell">2025 年 7 月</block>
   <block id="a257f7f4b2f6e07845ce567df142ad00" category="cell">2026 年 7 月</block>
   <block id="1a3a2b5e6c52142797bb5c00594e2a3c" category="inline-link-macro">23.04</block>
   <block id="4f00a05b361ef580687832a6a48984db" category="paragraph"><block ref="4f00a05b361ef580687832a6a48984db" category="inline-link-macro-rx"></block></block>
-  <block id="3b3d7bce734c0832c20ba464b1f2d199" category="cell">2024 年 4 月</block>
-  <block id="42ce83dc3f5ef22d986311b267a5ac20" category="cell">2025 年 4 月</block>
   <block id="fc7d05f9009e90b92a15aad926bca249" category="cell">2026 年 4 月</block>
   <block id="8dfda84fc7f59655e20a770603bf9231" category="inline-link-macro">23.01</block>
   <block id="e0ed61e44672f0b6193055dd0719d240" category="paragraph"><block ref="e0ed61e44672f0b6193055dd0719d240" category="inline-link-macro-rx"></block></block>
-  <block id="efe846805e5476fec607bbf54e45dc44" category="cell">2024 年 1 月</block>
-  <block id="9dd6e3f1271bf8cdcd9a0becace5f06f" category="cell">2025 年 1 月</block>
   <block id="7022ed6df71cc12fbd0576cef4df23fd" category="cell">2026 年 1 月</block>
-  <block id="775d4bb28d257a6aa23992563a82c458" category="inline-link-macro">22.10.</block>
-  <block id="1d064e71d708bc66779c604db1339850" category="paragraph"><block ref="1d064e71d708bc66779c604db1339850" category="inline-link-macro-rx"></block></block>
-  <block id="b0ec3d3ab3b33bd69418a7bd9e4d8f9e" category="cell">2023 年 10 月</block>
-  <block id="09ea156cd1da2f7e3fda8aefab96074a" category="cell">2024 年 10 月</block>
-  <block id="99dfa28920a40a7be0858c50f989a3e5" category="cell">2025 年 10 月</block>
-  <block id="b321f6c1ada34a3fa850996d673e01ca" category="inline-link-macro">22.07</block>
-  <block id="295e1f077ca9f1e68f56c558741bad74" category="paragraph"><block ref="295e1f077ca9f1e68f56c558741bad74" category="inline-link-macro-rx"></block></block>
   <block id="cfab1ba8c67c7c838db98d666f02a132" category="cell">--</block>
-  <block id="e764fe6b8f8825a307a87cedbef45678" category="inline-link-macro">22.04</block>
-  <block id="865d5fc74524e198b7d4edc0b0f93cd6" category="paragraph"><block ref="865d5fc74524e198b7d4edc0b0f93cd6" category="inline-link-macro-rx"></block></block>
-  <block id="955ddf0f7e289ee80cdea4b5324b620d" category="inline-link-macro">22.01</block>
-  <block id="1d6d13ec4b4db5f5d3487f7624ba2730" category="paragraph"><block ref="1d6d13ec4b4db5f5d3487f7624ba2730" category="inline-link-macro-rx"></block></block>
-  <block id="55559f520040667d3f8931728b37ef07" category="admonition">21.07之前的版本、請重新導向至舊版文件網站。</block>
   <block id="40e41fb2db11266b8f751c0d5c67cba0" category="inline-link">NetApp知識庫（需要登入）</block>
   <block id="01005ecf4349194d1ec13d0ba516c9e5" category="paragraph">如需疑難排解文章的完整清單、請參閱<block ref="57f5c759ada931c6a2051314ca6ee99e" category="inline-link-rx"></block>。您也可以找到Astra相關疑難排解問題的相關資訊<block ref="695f48b1d8b7348c0e2828947d24161e" category="inline-link-rx"></block>。</block>
   <block id="1cf7168782187634fbc408c66b895dbc" category="section-title">社群支援</block>
@@ -3944,21 +3922,6 @@ Astra Trident</block>
   <block id="8f4c1b75985ff2903107b7115115ea58" category="list-text"><block ref="8f4c1b75985ff2903107b7115115ea58" category="inline-link-macro-rx"></block></block>
   <block id="d59c00abbeaf33a9a094b3a69c563405" category="inline-link-macro">NetApp.IO</block>
   <block id="b86b16f39688f208b4a554adb7958c46" category="list-text"><block ref="b86b16f39688f208b4a554adb7958c46" category="inline-link-macro-rx"></block></block>
-  <block id="17c5eeb01739643b5aef94fe18b6c849" category="summary">您可以使用版本選取器、在最新版本與前四個版本之間瀏覽、或使用下列連結。</block>
-  <block id="93168a8084b3e838d2932c4734bd234e" category="section-title">舊版</block>
-  <block id="039b1be5cbe744fb8a84aa3fb3f1e4e0" category="paragraph">如果您未執行 Astra Trident 23.07 、則會根據提供先前版本的文件 <block ref="6e1ac221c7aa10f6bb30cbfd51cb3204" category="inline-link-macro-rx"></block>。</block>
-  <block id="35e136dc2ee53639294dbf7dbadf4436" category="inline-link">Astra Trident 23.04</block>
-  <block id="b409a213a2362e60968efbd1c87c6713" category="list-text"><block ref="b409a213a2362e60968efbd1c87c6713" category="inline-link-rx"></block></block>
-  <block id="4693b2393d80830cd4f198db20bf2b72" category="inline-link">Astra Trident 23.01</block>
-  <block id="cd494508ccf1cdc45163d6d9d0f401ff" category="list-text"><block ref="cd494508ccf1cdc45163d6d9d0f401ff" category="inline-link-rx"></block></block>
-  <block id="3fe5d266a33f137293c314a2e334b611" category="inline-link">Astra Trident 22.10</block>
-  <block id="9fefe9ff51badc61edd8a36c8240aa29" category="list-text"><block ref="9fefe9ff51badc61edd8a36c8240aa29" category="inline-link-rx"></block></block>
-  <block id="21d437ff7c8ceb5481603b5d2c05442a" category="inline-link">Astra Trident 22.07</block>
-  <block id="8a7908446b584a99ce1055c602a9c74e" category="list-text"><block ref="8a7908446b584a99ce1055c602a9c74e" category="inline-link-rx"></block></block>
-  <block id="c53358822905bb04d312060d1cb568af" category="inline-link">Astra Trident 22.04</block>
-  <block id="fdd380631ba8063e7b8f842282a01e40" category="list-text"><block ref="fdd380631ba8063e7b8f842282a01e40" category="inline-link-rx"></block></block>
-  <block id="4af8991c21dff2f779496b8350d1124b" category="inline-link">Astra Trident 22.01</block>
-  <block id="7669b0b69333e81c7c208aea3d1a3c6f" category="list-text"><block ref="7669b0b69333e81c7c208aea3d1a3c6f" category="inline-link-rx"></block></block>
   <block id="ea3d51fb2b16acb7cb260f25bc8965b1" category="sidebar">Astra Trident是由NetApp維護的開放原始碼儲存資源配置程式和Orchestrator。它可讓您為Docker和Kubernetes所管理的容器化應用程式建立儲存磁碟區。</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">版本資訊</block>
   <block id="312b0dc38b01ff32c1b2f5f81ee1ab2d" category="sidebar">與Trident營運者一起部署</block>
@@ -4038,4 +4001,7 @@ Astra Trident</block>
   <block id="ecc356799a42045ed6a6397f3f280cd2" category="paragraph">以下範例展示如何使用 PVC 註解匯入託管和非託管磁碟區。</block>
   <block id="cd8b45d6d96bb528f04c3ce2788b337d" category="paragraph">以下範例從後端<block ref="ac181edf7a7be1f8ae6a6b0ac4a71686" prefix=" " category="inline-code"></block>匯入一個名為<block ref="47068649001b68b4aba2f4219a2f981b" prefix=" " category="inline-code"></block>的 1GiB<block ref="8321592ce24c8a122ecf26a63cfca407" prefix=" " category="inline-code"></block> 磁碟區，並使用 PVC 註解設定了 RWO 存取模式：</block>
   <block id="6aa655b386a1e31c420fd6553ed2b4fc" category="paragraph">以下範例從後端<block ref="4bafc897a4f30b09156a60d3350c8819" prefix=" " category="inline-code"></block>匯入名為<block ref="a8aa3f9da25a5d21fdd26c0a26592e1e" prefix=" " category="inline-code"></block>的 1Gi<block ref="8321592ce24c8a122ecf26a63cfca407" prefix=" " category="inline-code"></block> 磁碟區，並使用 PVC 註解設定 RWO 存取模式：</block>
+  <block id="62bc04158f931e9b0a26f5676c8ab043" category="paragraph"><block ref="62bc04158f931e9b0a26f5676c8ab043" category="inline-link-macro-rx"></block></block>
+  <block id="15bd21e4cb669eaf47cfec94c1119ed7" category="paragraph">NetApp 不斷改進和增強其產品和服務。以下是 Astra Trident 的一些最新功能。有關先前版本的資訊，請參閱早期版本的文件。</block>
+  <block id="67826c4969c30c033af1c61762389384" category="sidebar">Astra Trident 是一個開源的儲存配置器和編排器，由 NetApp 維護。它允許您為由 Docker 和 Kubernetes 管理的容器化應用程式建立儲存磁碟區。**請閱讀發行說明，以了解有關升級至 Astra Trident 23.07 的重要資訊。**</block>
 </blocks>
