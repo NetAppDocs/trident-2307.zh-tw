@@ -4004,4 +4004,6 @@ Astra Trident</block>
   <block id="62bc04158f931e9b0a26f5676c8ab043" category="paragraph"><block ref="62bc04158f931e9b0a26f5676c8ab043" category="inline-link-macro-rx"></block></block>
   <block id="15bd21e4cb669eaf47cfec94c1119ed7" category="paragraph">NetApp 不斷改進和增強其產品和服務。以下是 Astra Trident 的一些最新功能。有關先前版本的資訊，請參閱早期版本的文件。</block>
   <block id="67826c4969c30c033af1c61762389384" category="sidebar">Astra Trident 是一個開源的儲存配置器和編排器，由 NetApp 維護。它允許您為由 Docker 和 Kubernetes 管理的容器化應用程式建立儲存磁碟區。**請閱讀發行說明，以了解有關升級至 Astra Trident 23.07 的重要資訊。**</block>
+  <block id="23dc68eb3282da7f8baebc1f7c84fff9" category="inline-link">支援生命週期頁面</block>
+  <block id="df26dce8cff00211af89034cce0d1904" category="admonition">有關最新 Trident 版本支援計劃，請參閱<block ref="605c91b6d04b068d1f5e6199e80f3518" category="inline-link-rx"></block>。</block>
 </blocks>
