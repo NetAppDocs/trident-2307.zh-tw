@@ -16,6 +16,7 @@ summary: 您可以將 Azure NetApp Files 設定為 Astra Trident 的後端。您
 
 
 
+[[azure-netapp-files-driver-details]]
 == Azure NetApp Files 驅動程式詳細資料
 
 Astra Trident 提供下列 Azure NetApp Files 儲存驅動程式來與叢集通訊。支援的存取模式包括： _ReadWriteOnce_ （ rwo ）、 _ReadOnlyMany （ ROX ）、 _ReadWriteMany （ rwx ）、 _ReadWriteOncePod （ RWOP_ ）。
@@ -38,6 +39,7 @@ Rwo 、 ROX 、 rwx 、 RWOP
 |===
 
 
+[[considerations]]
 == 考量
 
 * 此支援服務不支援小於100 GB的磁碟區。Azure NetApp Files如果要求較小的磁碟區、Astra Trident會自動建立100-GB磁碟區。

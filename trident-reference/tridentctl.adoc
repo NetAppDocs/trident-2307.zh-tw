@@ -16,6 +16,7 @@ summary: 深入瞭解tridentctl、這是一個命令列公用程式、可讓您�
 
 
 
+[[available-commands-and-options]]
 == 可用的命令和選項
 
 如需使用資訊、請執行 `tridentctl --help`。
@@ -62,6 +63,7 @@ CAUTION: Trident REST介面可設定為偵聽、僅適用於127.0.0.1（適用�
 
 
 
+[[create]]
 == `create`
 
 您可以使用執行 `create` 命令以新增資源至Astra Trident。
@@ -76,6 +78,7 @@ Usage:
 
 
 
+[[delete]]
 == `delete`
 
 您可以執行 `delete` 從Astra Trident移除一或多個資源的命令。
@@ -95,6 +98,7 @@ Usage:
 
 
 
+[[get]]
 == `get`
 
 您可以執行 `get` 從Astra Trident取得一或多個資源的命令。
@@ -119,6 +123,7 @@ Usage:
 
 
 
+[[images]]
 == `images`
 
 您可以執行 `images` 標記以列印容器影像Astra Trident需求的表格。
@@ -134,6 +139,7 @@ Usage:
 
 
 
+[[import-volume]]
 == `import volume`
 
 您可以執行 `import volume` 將現有磁碟區匯入Astra Trident的命令。
@@ -155,6 +161,7 @@ Usage:
 
 
 
+[[install]]
 == `install`
 
 您可以執行 `install` 安裝Astra Trident的旗標。
@@ -187,6 +194,7 @@ Usage:
 
 
 
+[[logs]]
 == `logs`
 
 您可以執行 `logs` 用於列印Astra Trident記錄的旗標。
@@ -208,6 +216,7 @@ Usage:
 
 
 
+[[send]]
 == `send`
 
 您可以執行 `send` 從Astra Trident傳送資源的命令。
@@ -222,6 +231,7 @@ Usage:
 
 
 
+[[uninstall]]
 == `uninstall`
 
 您可以執行 `uninstall` 解除安裝Astra Trident的旗標。
@@ -237,6 +247,7 @@ Usage:
 
 
 
+[[update]]
 == `update`
 
 您可以執行 `update` 用於修改Astra Trident中資源的命令。
@@ -251,6 +262,7 @@ Usage:
 
 
 
+[[version]]
 == `version`
 
 您可以執行 `version` 用於列印版本的旗標 `tridentctl` 以及執行中的Trident服務。

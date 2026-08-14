@@ -16,6 +16,7 @@ summary: 請使用此處提供的指標來疑難排解安裝及使用Astra Tride
 
 
 
+[[general-troubleshooting]]
 == 一般疑難排解
 
 * 如果Trident Pod無法正常顯示（例如、當Trident Pod卡在中時） `ContainerCreating` 階段、只需不到兩個就緒容器）、就能執行 `kubectl -n trident describe deployment trident` 和 `kubectl -n trident describe pod trident-********-****` 可提供更多洞見。取得Kibelet記錄（例如、透過 `journalctl -xeu kubelet`）也很有幫助。
@@ -68,6 +69,7 @@ helm upgrade <name> trident-operator-21.07.1-custom.tgz --set tridentDebug=true`
 
 
 
+[[troubleshooting-an-unsuccessful-trident-deployment-using-the-operator]]
 == 使用操作員疑難排解不成功的Trident部署
 
 如果您使用運算子部署Trident、則狀態為 `TridentOrchestrator` 變更來源 `Installing` 至 `Installed`。如果您觀察到 `Failed` 狀態、而且操作員無法自行恢復、您應該執行下列命令來檢查操作員的記錄：
@@ -143,6 +145,7 @@ trident-operator-766f7b8658-ldzsv   1/1     Running            0          8m17s
 
 
 
+[[troubleshooting-an-unsuccessful-trident-deployment-using-tridentctl]]
 == 使用疑難排解不成功的Trident部署 `tridentctl`
 
 為了協助您找出錯誤所在、您可以使用再次執行安裝程式 ``-d`` 引數、可開啟偵錯模式、協助您瞭解問題所在：
@@ -165,6 +168,7 @@ INFO Trident uninstallation succeeded.
 ----
 
 
+[[completely-remove-astra-trident-and-crds]]
 == 完全移除 Astra Trident 和 CRD
 
 您可以完全移除 Astra Trident 和所有建立的客戶需求日、以及相關的自訂資源。

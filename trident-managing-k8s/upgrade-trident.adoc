@@ -16,6 +16,7 @@ Astra Trident依照每季發行時段進行、每一日曆年發行四個主要�
 
 
 
+[[considerations-before-upgrading]]
 == 升級前的考量
 
 升級至最新版Astra Trident時、請考慮下列事項：
@@ -34,12 +35,13 @@ Astra Trident依照每季發行時段進行、每一日曆年發行四個主要�
 
 
 
+[[step-1-select-a-version]]
 == 步驟 1 ：選取版本
 
 Astra Trident版本遵循日期型 `YY.MM` 命名慣例、其中「是」是一年的最後兩位數、「公釐」是月份。DOT版本遵循A `YY.MM.X` 慣例、其中「X」是修補程式層級。您將根據要升級的版本、選擇要升級的版本。
 
 * 您可以直接升級至安裝版本的四個版本範圍內的任何目標版本。例如、您可以直接從 22.07 （或任何 22.07 點版本）升級到 23.07 。
-* 如果您要從四個版本的外部版本升級、請執行多步驟升級。請使用的升級指示 link:../earlier-versions.html["舊版"] 您要從升級至最新版本、以符合四個版本的時間範圍。例如、如果您執行 21.07 且想要升級至 23.07 ：
+* 如果您要從超出四版本週期範圍的版本升級，請執行多步驟升級。使用您要升級的早期版本的升級說明，逐步升級至符合四版本週期範圍的最新版本。例如，如果您目前執行的是 21.07 版本，並且想要升級至 23.07 版本：
 +
 .. 第一次從 2007 年 21 月 7 日升級至 2007 年 22 月 22 日。
 .. 然後從 22.07 升級到 23.07 。
@@ -52,6 +54,7 @@ NOTE: 在 OpenShift Container Platform 上使用 Trident 運算子進行升級�
 
 
 
+[[step-2-determine-the-original-installation-method]]
 == 步驟 2 ：確定原始安裝方法
 
 若要判斷您原本用來安裝 Astra Trident 的版本：
@@ -72,9 +75,10 @@ NOTE: 在 OpenShift Container Platform 上使用 Trident 運算子進行升級�
 
 
 
+[[step-3-select-an-upgrade-method]]
 == 步驟 3 ：選擇升級方法
 
-一般而言、您應該使用與初始安裝相同的方法進行升級、不過您可以 link:../trident-get-started/kubernetes-deploy.html#moving-between-installation-methods["在安裝方法之間移動"]。有兩種方法可以升級Astra Trident。
+通常情況下，您應該使用與初始安裝相同的方法進行升級，但您也可以link:../trident-install/kubernetes-deploy.html#moving-between-installation-methods["在安裝方法之間移動"]。升級 Astra Trident 有兩種選項。
 
 * link:upgrade-operator.html["使用Trident營運者進行升級"]
 +
